@@ -1,0 +1,6 @@
+@KIS_HostAddress = http://localhost:5188
+
+GET {{KIS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
