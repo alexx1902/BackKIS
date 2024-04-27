@@ -36,7 +36,7 @@ public class SpecificationController : ControllerBase
     public IActionResult CreateSpecification(SpecificationModel Specification)
     {
         _SpecificationRepository.Add(Specification);
-        return CreatedAtAction("GetSpecification", new { id = Specification.PositionID }, Specification);
+        return CreatedAtAction("GetSpecification", new { id = Specification.PositionID },new { Specification });
     }
 
     [HttpPut("{id}")]
